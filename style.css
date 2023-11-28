@@ -1,35 +1,88 @@
-.logo-img{
-    width: 120px;
-    height: 36px;
+html{
+    font-size: 16px;
+    font-family: sans-serif;
 }
-.logo-img-2{
-    width: 50px;
-    height: 50px:
-}
-.body{
+body{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    margin: 0;
     height:3000px;
-    position:relevant
+    padding: 0;
+}
 
+main {
+    position: relative;
+    translate: scale(1.0);
+    display: flex;
+    max-width: 1500px;
+    background-color: #fff;
+    padding: 50px;
+}
+.content{
+padding-left: 100px;
+}
+a {
+    text-decoration: none;
+    color: #3366cc;
+    background: none;
 }
 ul{
     margin : 0;
     list-style-type:none;
 }
-.checkbox{
+.header-start{
+    display: flex;
+    align-items: center;
+}
+.mv-logo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    min-width: 13.875em;
+    margin-left: 200px;
+}
+.logo-span{
+    float: left;
+    margin-left: 5px;
+}
+.logo-wordmark{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 0;
 
+    vertical-align: middle;
 }
-.html{
-    font-size: 16px;
+.logo-taglink{
+    display: block;
+    margin: 5px auto 0;
+    border: 0;
+    vertical-align: middle;
 }
-.header-list{
+.logo-icon{
+    display: block;
+    float: left;
+    border: 0;
+    vertical-align: middle;
+}
+
+header{
+    display: flex;
+    position: absolute;
+    padding: 0 50px;
     justify-content: space-between;
+    top: 0;
+    right: 0px;
+    left: 0px;
     display: flex;
     align-items: center;
     background-color:white;
-    padding: 10px;
+    height: 50px;
 }
 
-.header-list li button{
+.search-button{
     background-color: #f8f9fa;
     color: #202122;
     border-color: #a2a9b1;
@@ -41,7 +94,7 @@ ul{
     min-width: 32px;
     min-height: 32px;
     max-width: 32em;
-    margin: 0;
+    margin: 0 0 0 -5px;
     border-width: 1px;
     border-style: solid;
     border-radius: 2px;
@@ -57,10 +110,8 @@ ul{
     transition-property: background-color,color,border-color,box-shadow;
     transition-duration: .1s;
     cursor: pointer;
-    font-family: sans-serif;
 }
 .input{
-
     box-sizing: border-box;
     min-height: 32px;
     width: 380px;
@@ -77,28 +128,16 @@ ul{
 margin-left: 24px;
 }
 h1{
-    word-wrap: break-word;
-    margin-bottom: 0;
-    flex-grow: 1;
-    border: 0;
-    font-size: 1.8em;
-    margin-bottom: 0.25em;
+    display: block;
     padding: 0;
     font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
-    line-height: 1.375;
-    font-size: 188%;
-    font-weight: normal;
-    margin-bottom: 0.6em;
     border-bottom: 1px solid #a2a9b1;
-}
-h1 {
-    display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+
 }
 h1, h2, h3, h4, h5, h6 {
     color: #000000;
@@ -115,5 +154,42 @@ p {
     margin-inline-end: 0px;
 }
 .left-side-menu{
-position:fixed;
+    max-height: calc(100vh - 16px);
+    position: sticky;
+    display: block;
+    font-size: 1rem;
+    top: 100px;
+    left: 0px;
+}
+.search{
+margin-left: 30px
+}
+.registration{
+    font-size: 14px;
+}
+.right-block img{
+    display: block;
+}
+.right-block{
+    background-color:#f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 5px;
+    height: fit-content;
+}
+.checkbox{
+  background: url("./3.png") no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1015px){
+    .search{
+    display:none;
+    }
+}
+@media screen and (max-width: 700px){
+    .registration{
+        display: none;
+    }
+    .logo-icon{
+        display: none;
+    }
 }

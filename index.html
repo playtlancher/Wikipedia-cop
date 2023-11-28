@@ -1,42 +1,54 @@
 <!Doctype html>
 <html class="html">
 <head>
-    <title>Lamborghini - wikipedia</title>
+    <title>Lamborghini - Вікіпедія</title>
     <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="body">
-    <header class="header-list">
-            <div class="head-menu">
-                <input type="checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="checkbox" aria-label="Main menu" aria-expanded="false">
+<body>
+    <main>
+    <header class="header-list ">
+            <div class="header-start">
+                <input type="checkbox" role="button" aria-haspopup="true" data-event-name="dropdown" class="checkbox" aria-label="Main menu" aria-expanded="false">
 
-               <a class="logo" href="https://en.wikipedia.org/wiki/Main_Page">
-                  <img class="logo-img-2" src="./wikipedia.png" alt="Wikipedia`s logo" >
-               </a>
-                <a class="logo" href="https://en.wikipedia.org/wiki/Main_Page">
-                   <img class="logo-img" src="./logo.svg" alt="Wikipedia`s logo"?>
+                <a href="https://en.wikipedia.org/wiki/Main_Page" class="mw-logo">
+                    <img class="logo-icon" src="https://en.wikipedia.org/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+                    <span class="logo-span">
+		                <img class="logo-wordmark" alt="Wikipedia" src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		                <img class="logo-tagline" alt="The Free Encyclopedia" src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	                </span>
                 </a>
-
-                <input class="input" placeholder="Search Wikipedia" type="text">
-                <button>Search</button>
-
+                <div class="search">
+                    <input class="input" placeholder="Search Wikipedia" type="text">
+                    <button class="search-button">Search</button>
+                </div>
             </div>
 
-            <div>
-                <a href="#" alt="create account">create account</a>
-                <a href="#" alt="log in">log in</a>
+            <div class="registration">
+                <a href="#" alt="Create account">Create account</a>
+                <a href="#" alt="Log in" style=" margin-left: 10px">Log in</a>
             </div>
     </header>
-    <div>
-        <h1>Lamborghini</h1>
-        <p><b>Automobili Lamborghini S.p.A.</b> (Italian pronunciation: [autoˈmɔːbili lamborˈɡiːni]) is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.</p>
+        <div>
+            <ul class="left-side-menu">
+                <li><a href="#" >(Top) </a></li>
+                <li><a href="#History">History</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Toggle Products subsection">Toggle Products subsection</a> </li>
+                <li><a href="#Motorsport">Motorsport</a> </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Lamborghini</h1>
+            <p><b>Automobili Lamborghini S.p.A.</b> (Italian pronunciation: [autoˈmɔːbili lamborˈɡiːni]) is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.</p>
+        </div>
+    <div class="right-block">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Lamborghini_Logo.svg/180px-Lamborghini_Logo.svg.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Lamborghini_logo.svg/200px-Lamborghini_logo.svg.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lamborghini%2C_Sant%27Agata_Bolognese%2C_Bologna.jpg/220px-Lamborghini%2C_Sant%27Agata_Bolognese%2C_Bologna.jpg">
+        <span style="font-size: 14px">Headquarters in Sant'Agata Bolognese</span>
     </div>
-    <div>
-        <ul class="left-side-menu">
-            <li>(top)</li>
-            <li>History</li>
-        </ul>
-    </div>
-
-
+</main>
 </body>
 </html>
