@@ -8,7 +8,6 @@ body{
     justify-content: space-around;
     background-color: #f0f0f0;
     margin: 0;
-    height:3000px;
     padding: 0;
 }
 
@@ -147,7 +146,6 @@ ul{
     display: flex;
     height: 100%;
     align-items: center;
-    min-width: 13.875em;
     margin-left: 200px;
 }
 .logo-span{
@@ -161,7 +159,6 @@ ul{
     vertical-align: middle;
 }
 .logo-container{
-
     display: block;
     height: 100%;
     float: left;
@@ -315,7 +312,7 @@ table{
     border-spacing: 2px;
     border-color: gray;
 }
-.table{
+.table-2{
     border: 1px solid #a2a9b1;
     border-spacing: 3px;
     background-color: #f8f9fa;
@@ -324,7 +321,6 @@ table{
     padding: 0.2em;
     float: right;
     clear: right;
-    font-size: 88%;
     line-height: 1.5em;
     width: 22em;
 }
@@ -344,7 +340,8 @@ tr{
     font-weight: bold;
     text-align: center;
 }
-.right-block-position{
+.right-block-table{
+    font-size:14px;
     float: right;
     text-align: center;
     z-index: 1;
@@ -365,8 +362,7 @@ tr{
     background-color: #f8f9fa;
     border: 1px solid #a2a9b1;
     padding: 1.5em;
-
-    text-align: center;
+    text-align: left;
     font-size: 88%;
     width:auto;
     height: auto;
@@ -394,5 +390,13 @@ tr{
     }
     .logo-icon{
         display: none;
+    }
+}
+@media screen and (max-width:1250px){
+    .left-side-menu{
+        display: none;
+    }
+    main{
+    grid-template-columns:0fr 3fr 0.8fr;
     }
 }
