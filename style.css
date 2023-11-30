@@ -1,5 +1,5 @@
 html{
-    font-size: 16px;
+
     font-family: sans-serif;
 }
 body{
@@ -33,9 +33,10 @@ main {
 .tool-bar::after{
     bottom: 1px;
 }
-.insert{
+.note{
     padding-left: 1.6em;
     font-style: italic;
+    margin-bottom: 0;
 }
 a:hover {
   text-decoration: underline;
@@ -45,6 +46,14 @@ a:hover {
 }
 .flex-div{
     display:flex;
+}
+.headline{
+    font-weight: normal;
+    padding: 0;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    line-height: 1.375;
+    color: #000000;
+    margin-top: 1em;
 }
 .content{
     position: relative;
@@ -97,7 +106,31 @@ a:hover {
     background: #f8f9fa;
     margin: 3px;
 }
-
+.description{
+    right: 6px;
+    left: auto;
+    background-image: url(/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e);
+}
+.gallery{
+    margin: 2px;
+    padding: 2px;
+    display: block;
+}
+.gallery-box{
+    vertical-align: top;
+    display: inline-block;
+}
+.thumb{
+    border: 1px solid #c8ccd1;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 2px;
+}
+.gallery-text{
+    overflow: hidden;
+    font-size: 94%;
+    padding: 2px 4px;
+    word-wrap: break-word;}
 .photo-text{
     border: 1px solid #c8ccd1;
     border-top: 0;
@@ -116,13 +149,12 @@ a:hover {
     text-indent: initial;
 }
 a{
-    position:relative;
     text-decoration: none;
     word-break: break-word;
     color: #3366cc;
     background: none;
 }
-ul{
+.left-side-menu ul , header ul{
     margin : 0;
     list-style-type:none;
 }
@@ -256,6 +288,24 @@ h1{
     margin-inline-end: 0px;
 
 }
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-bottom: 1px solid #a2a9b1;
+    font-weight: bold;
+}
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 h1, h2, h3, h4, h5, h6 {
     color: #000000;
     margin: 0;
@@ -347,7 +397,7 @@ tr{
     z-index: 1;
     position: relative;
     font-size: 88%;
-    width:271px;
+    width:auto;
     height: auto;
 }
 .right-block-position th{
@@ -355,7 +405,9 @@ tr{
     text-align: left;
     font-weight: bold;
 }
-
+.inline{
+    display: inline !important;
+}
 
 .right-block {
     margin: 0.5em 0 0.5em 1em;
@@ -363,14 +415,18 @@ tr{
     border: 1px solid #a2a9b1;
     padding: 1.5em;
     text-align: left;
-    font-size: 88%;
+    font-size: 100%;
     width:auto;
     height: auto;
+    align-items:center;
 }
 
 .right-block img {
     display: block;
     margin: 0 auto;
+}
+.photo-span{
+    text-align: center !important;
 }
 .right-block span{
     font-size: 12px;
