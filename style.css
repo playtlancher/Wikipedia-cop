@@ -126,6 +126,13 @@ a:hover {
     text-align: center;
     margin: 2px;
 }
+.mw-gallery-traditional .gallerybox > .thumb > * {
+    vertical-align: middle;
+    display: inline-block;
+}
+.little-bit-text{
+    font-size: 1rem;
+}
 .gallery-text{
     overflow: hidden;
     font-size: 94%;
@@ -157,6 +164,7 @@ a{
 .left-side-menu ul , header ul{
     margin : 0;
     list-style-type:none;
+    list-style:none;
 }
 .header-start{
     display: flex;
@@ -331,6 +339,9 @@ p {
     padding: 0px;
     margin-right: 100px;
     line-height: 24px;
+}
+.left-side-menu li{
+    list-style-type: none;
 }
 .left-side-menu li:first-of-type{
     font-weight:bold;
